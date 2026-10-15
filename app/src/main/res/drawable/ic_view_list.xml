@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- List View icon -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="@color/notion_text_default"
+        android:pathData="M3,14h18v-2H3V14z M3,19h18v-2H3V19z M3,9h18V7H3V9z M3,4v2h18V4H3z" />
+</vector>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing System (4dp grid) -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">12dp</dimen>
+    <dimen name="spacing_lg">16dp</dimen>
+    <dimen name="spacing_xl">20dp</dimen>
+
+    <!-- Card -->
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="card_inner_padding">14dp</dimen>
+
+    <!-- Search Bar -->
+    <dimen name="search_corner_radius">10dp</dimen>
+    <dimen name="search_height">44dp</dimen>
+
+    <!-- Editor Toolbar & Stats -->
+    <dimen name="editor_toolbar_height">48dp</dimen>
+
+    <!-- FAB -->
+    <dimen name="fab_margin">24dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="text_title_medium">18sp</dimen>
+    <dimen name="text_body_small">14sp</dimen>
+
+    <!-- Screen Padding -->
+    <dimen name="screen_padding_horizontal">16dp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_height">56dp</dimen>
+
+    <!-- Empty State Icon -->
+    <dimen name="empty_icon_size">120dp</dimen>
+
+    <!-- Note Item -->
+    <dimen name="note_title_size">15sp</dimen>
+    <dimen name="note_content_size">13sp</dimen>
+    <dimen name="note_date_size">11sp</dimen>
+</resources>

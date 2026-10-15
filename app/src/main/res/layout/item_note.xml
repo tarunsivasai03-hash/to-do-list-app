@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Note card — Notion style: neutral surface, hairline border, colored tag.
+-->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NotionCard"
+    android:id="@+id/cardNote"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/card_inner_padding">
+
+        <!-- Title + pin -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvNoteTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="2"
+                android:textColor="@color/notion_text_default"
+                android:textSize="@dimen/note_title_size"
+                tools:text="Meeting Notes" />
+
+            <ImageView
+                android:id="@+id/ivPin"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="2dp"
+                android:contentDescription="@string/cd_pinned"
+                android:src="@drawable/ic_pin"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Content preview -->
+        <TextView
+            android:id="@+id/tvNoteContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:maxLines="4"
+            android:textColor="@color/notion_text_secondary"
+            android:textSize="@dimen/note_content_size"
+            tools:text="Discuss project timeline and deliverables for Q4..." />
+
+        <!-- Reminder -->
+        <TextView
+            android:id="@+id/tvReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_sm"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/notion_blue_text"
+            android:textSize="@dimen/note_date_size"
+            android:visibility="gone"
+            tools:text="\u23F0 Oct 16, 9:00 AM"
+            tools:visibility="visible" />
+
+        <!-- Bottom row: tag, checklist progress, date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipCategory"
+                style="@style/NotionChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                tools:text="Work" />
+
+            <TextView
+                android:id="@+id/tvChecklist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/notion_text_secondary"
+                android:textSize="@dimen/note_date_size"
+                android:visibility="gone"
+                tools:text="\u2611 2/5"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvNoteDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/notion_text_tertiary"
+            android:textSize="@dimen/note_date_size"
+            tools:text="Today, 2:30 PM" />
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

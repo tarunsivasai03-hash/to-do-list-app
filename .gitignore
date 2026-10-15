@@ -1,0 +1,20 @@
+# Gradle / build output
+.gradle/
+build/
+app/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+
+# Machine-specific
+local.properties
+.idea/
+*.iml
+
+# OS / misc
+.DS_Store
+Thumbs.db
+*.apk
+*.aab
+*.keystore
+*.jks

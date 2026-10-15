@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Empty state icon: a stylized document with lines -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Page background -->
+    <path
+        android:pathData="M30,15 L75,15 L90,30 L90,105 L30,105 Z"
+        android:fillColor="#E9E9E7"
+        android:strokeColor="#D4D4D2"
+        android:strokeWidth="1.5" />
+
+    <!-- Page fold -->
+    <path
+        android:pathData="M75,15 L75,30 L90,30"
+        android:fillColor="#D4D4D2"
+        android:strokeColor="#C4C4C2"
+        android:strokeWidth="1" />
+
+    <!-- Text lines -->
+    <path
+        android:pathData="M42,48 L78,48"
+        android:strokeColor="#C4C4C2"
+        android:strokeWidth="3"
+        android:strokeLineCap="round" />
+
+    <path
+        android:pathData="M42,60 L72,60"
+        android:strokeColor="#D4D4D2"
+        android:strokeWidth="3"
+        android:strokeLineCap="round" />
+
+    <path
+        android:pathData="M42,72 L75,72"
+        android:strokeColor="#D4D4D2"
+        android:strokeWidth="3"
+        android:strokeLineCap="round" />
+
+    <path
+        android:pathData="M42,84 L66,84"
+        android:strokeColor="#E0E0DE"
+        android:strokeWidth="3"
+        android:strokeLineCap="round" />
+
+    <!-- Pencil icon -->
+    <path
+        android:pathData="M38,90 L28,100"
+        android:strokeColor="#9B9A97"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+
+    <path
+        android:pathData="M26,102 L28,100 L30,102 L26,102"
+        android:fillColor="#9B9A97" />
+</vector>

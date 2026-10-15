@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Add/Edit Note Screen Layout — Modern Notion-style editor layout
+    with live stats counter bar and quick formatting toolbar.
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".activities.AddEditNoteActivity">
+
+    <!-- ============================================== -->
+    <!-- Toolbar with back + save                       -->
+    <!-- ============================================== -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarAddEdit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/toolbar_bg"
+        android:elevation="0dp"
+        app:navigationIcon="@drawable/ic_back"
+        app:navigationContentDescription="@string/cd_back"
+        app:menu="@menu/menu_add_edit" />
+
+    <!-- Subtle divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/notion_divider" />
+
+    <!-- ============================================== -->
+    <!-- Form Content (Scrollable Editor Area)          -->
+    <!-- ============================================== -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/screen_padding_horizontal">
+
+            <!-- Reminder chip (visible when a reminder is set) -->
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipReminder"
+                style="@style/Widget.Material3.Chip.Assist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xs"
+                android:visibility="gone"
+                app:closeIconVisible="true"
+                tools:text="Reminder: Oct 16, 9:00 AM"
+                tools:visibility="visible" />
+
+            <!-- Category Dropdown Picker -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCategory"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md"
+                android:hint="@string/hint_category"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeColor="@color/colorOutline">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actvCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textColor="@color/notion_text_default"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-medium" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Title Input (Seamless Notion style) -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/hint_title"
+                    android:fontFamily="sans-serif-medium"
+                    android:inputType="textCapSentences"
+                    android:maxLines="3"
+                    android:textColor="@color/notion_text_default"
+                    android:textColorHint="@color/notion_text_tertiary"
+                    android:textSize="22sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Content Input (Seamless multiline editor) -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_sm"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/hint_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:lineSpacingMultiplier="1.15"
+                    android:minHeight="400dp"
+                    android:textColor="@color/notion_text_default"
+                    android:textColorHint="@color/notion_text_tertiary"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Subtle divider above toolbar -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/notion_divider" />
+
+    <!-- ============================================== -->
+    <!-- Quick Formatting Toolbar                      -->
+    <!-- ============================================== -->
+    <LinearLayout
+        android:id="@+id/layoutFormattingToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editor_toolbar_height"
+        android:background="@color/toolbar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/spacing_md"
+        android:paddingEnd="@dimen/spacing_md">
+
+        <!-- Insert Timestamp Button -->
+        <ImageButton
+            android:id="@+id/btnInsertTimestamp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_insert_timestamp"
+            android:padding="8dp"
+            android:src="@drawable/ic_access_time"
+            app:tint="@color/notion_text_default" />
+
+        <!-- Insert Bullet Point Button -->
+        <ImageButton
+            android:id="@+id/btnInsertBullet"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_insert_bullet"
+            android:padding="8dp"
+            android:src="@drawable/ic_format_list"
+            app:tint="@color/notion_text_default" />
+
+        <!-- Insert Checkbox Button -->
+        <ImageButton
+            android:id="@+id/btnInsertCheckbox"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_insert_checkbox"
+            android:padding="8dp"
+            android:src="@drawable/ic_check_box"
+            app:tint="@color/notion_text_default" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvEditorStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/notion_text_tertiary"
+            android:textSize="12sp"
+            tools:text="124 words · 620 chars · 1 min read" />
+
+    </LinearLayout>
+
+</LinearLayout>

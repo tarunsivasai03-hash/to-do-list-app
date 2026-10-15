@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================================== -->
+    <!-- Notion Dark Mode Color Palette                 -->
+    <!-- ============================================== -->
+
+    <!-- Base Colors -->
+    <color name="notion_text_default">#E6E6E5</color>
+    <color name="notion_text_secondary">#9B9A97</color>
+    <color name="notion_text_tertiary">#7F7E7B</color>
+    <color name="notion_divider">#2F2F2F</color>
+
+    <!-- Category: Personal (Purple) -->
+
+    <!-- Category: Work (Blue) -->
+    <color name="notion_blue_text">#529CCA</color>
+
+    <!-- Category: College (Green) -->
+
+    <!-- Category: Shopping (Orange) -->
+
+    <!-- Category: Ideas (Pink) -->
+
+    <!-- Additional Notion Colors -->
+    <color name="notion_red_text">#FF7369</color>
+    <color name="notion_red_bg">#594141</color>
+
+    <!-- 10 Aesthetic Notion Color Combinations -->
+
+    <!-- Aesthetic Category Background Tints (Dark Mode) -->
+
+    <!-- Theme Colors (Dark Mode) -->
+    <color name="colorPrimary">#E6E6E5</color>
+    <color name="colorOnPrimary">#191919</color>
+    <color name="colorSecondary">#2383E2</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorSurface">#191919</color>
+    <color name="colorOnSurface">#E6E6E5</color>
+    <color name="colorSurfaceVariant">#202020</color>
+    <color name="colorOnSurfaceVariant">#9B9A97</color>
+    <color name="colorBackground">#191919</color>
+    <color name="colorOnBackground">#E6E6E5</color>
+    <color name="colorError">#FF7369</color>
+    <color name="colorOnError">#2F3437</color>
+    <color name="colorOutline">#2F2F2F</color>
+
+    <!-- FAB -->
+    <color name="fab_bg">#2383E2</color>
+    <color name="fab_icon">#FFFFFF</color>
+
+    <!-- Search Bar -->
+    <color name="search_bg">#252525</color>
+    <color name="search_hint">#80979A9B</color>
+
+    <!-- Card -->
+    <color name="card_bg">#202020</color>
+    <color name="card_stroke">#2F2F2F</color>
+
+    <!-- Snackbar -->
+    <color name="snackbar_bg">#E6E6E5</color>
+    <color name="snackbar_text">#191919</color>
+    <color name="snackbar_action">#529CCA</color>
+
+    <!-- Toolbar -->
+    <color name="toolbar_bg">#191919</color>
+    <color name="toolbar_title">#E6E6E5</color>
+
+    <!-- Status Bar -->
+    <color name="status_bar">#191919</color>
+
+    <!-- Chip Colors -->
+    <color name="chip_selected_bg">#2B3A45</color>
+    <color name="chip_selected_text">#6BB1F0</color>
+    <color name="chip_unselected_bg">#252525</color>
+    <color name="chip_unselected_text">#E6E6E5</color>
+
+    <!-- Notion tag colors (bg / text / dot) -->
+    <color name="tag_gray_bg">#454B4E</color>
+    <color name="tag_gray_text">#979A9B</color>
+    <color name="tag_gray_dot">#979A9B</color>
+    <color name="tag_brown_bg">#434040</color>
+    <color name="tag_brown_text">#B08B7B</color>
+    <color name="tag_brown_dot">#937264</color>
+    <color name="tag_orange_bg">#594A3A</color>
+    <color name="tag_orange_text">#FFA344</color>
+    <color name="tag_orange_dot">#FFA344</color>
+    <color name="tag_yellow_bg">#59563B</color>
+    <color name="tag_yellow_text">#FFDC49</color>
+    <color name="tag_yellow_dot">#FFDC49</color>
+    <color name="tag_green_bg">#354C4B</color>
+    <color name="tag_green_text">#4DAB9A</color>
+    <color name="tag_green_dot">#4DAB9A</color>
+    <color name="tag_blue_bg">#364954</color>
+    <color name="tag_blue_text">#529CCA</color>
+    <color name="tag_blue_dot">#529CCA</color>
+    <color name="tag_purple_bg">#443F57</color>
+    <color name="tag_purple_text">#9A6DD7</color>
+    <color name="tag_purple_dot">#9A6DD7</color>
+    <color name="tag_pink_bg">#533B4C</color>
+    <color name="tag_pink_text">#E255A1</color>
+    <color name="tag_pink_dot">#E255A1</color>
+    <color name="tag_red_bg">#594141</color>
+    <color name="tag_red_text">#FF7369</color>
+    <color name="tag_red_dot">#FF7369</color>
+</resources>

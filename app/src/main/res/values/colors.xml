@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================================== -->
+    <!-- Notion Light Mode Color Palette                -->
+    <!-- ============================================== -->
+
+    <!-- Base Colors -->
+    <color name="notion_white">#FFFFFF</color>
+    <color name="notion_text_default">#37352F</color>
+    <color name="notion_text_secondary">#787774</color>
+    <color name="notion_text_tertiary">#9B9A97</color>
+    <color name="notion_divider">#E9E9E7</color>
+
+    <!-- Category: Personal (Purple) -->
+
+    <!-- Category: Work (Blue) -->
+    <color name="notion_blue_text">#0B6E99</color>
+
+    <!-- Category: College (Green) -->
+
+    <!-- Category: Shopping (Orange) -->
+
+    <!-- Category: Ideas (Pink) -->
+
+    <!-- Additional Notion Colors -->
+    <color name="notion_red_text">#E03E3E</color>
+    <color name="notion_red_bg">#FBE4E4</color>
+
+    <!-- 10 Aesthetic Notion Color Combinations -->
+    <!-- 1. Minimalist (Soft White & Gray) -->
+
+    <!-- 2. Creative (Sunny Yellow & Mint Green) -->
+
+    <!-- 3. Projects (Coral Pink & Cool Teal) -->
+
+    <!-- 4. Wellness (Muted Lavender & Sage Green) -->
+
+    <!-- 5. Personal (Dusty Rose & Charcoal Gray) -->
+
+    <!-- 6. Work (Deep Navy & Warm Beige) -->
+
+    <!-- 7. Goals (Crisp Blue & Lemon Yellow) -->
+
+    <!-- 8. Lifestyle (Peach & Olive Green) -->
+
+    <!-- 9. Finance (Classic Black & Golden Yellow) -->
+
+    <!-- 10. Reading (Sky Blue & Soft Coral) -->
+
+    <!-- Aesthetic Category Background Tints (Light Mode) -->
+
+    <!-- Theme Colors (mapped to Material3 attributes) -->
+    <color name="colorPrimary">#37352F</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#2383E2</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#37352F</color>
+    <color name="colorSurfaceVariant">#F7F6F3</color>
+    <color name="colorOnSurfaceVariant">#787774</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorOnBackground">#37352F</color>
+    <color name="colorError">#E03E3E</color>
+    <color name="colorOnError">#FFFFFF</color>
+    <color name="colorOutline">#E9E9E7</color>
+
+    <!-- FAB -->
+    <color name="fab_bg">#2383E2</color>
+    <color name="fab_icon">#FFFFFF</color>
+
+    <!-- Search Bar -->
+    <color name="search_bg">#F1F1EF</color>
+    <color name="search_hint">#9B9A97</color>
+
+    <!-- Card -->
+    <color name="card_bg">#FFFFFF</color>
+    <color name="card_stroke">#EDECE9</color>
+
+    <!-- Snackbar -->
+    <color name="snackbar_bg">#37352F</color>
+    <color name="snackbar_text">#FFFFFF</color>
+    <color name="snackbar_action">#6BB1F0</color>
+
+    <!-- Toolbar -->
+    <color name="toolbar_bg">#FFFFFF</color>
+    <color name="toolbar_title">#37352F</color>
+
+    <!-- Status Bar -->
+    <color name="status_bar">#FFFFFF</color>
+
+    <!-- Chip Colors for filter -->
+    <color name="chip_selected_bg">#E7F3F8</color>
+    <color name="chip_selected_text">#0B6E99</color>
+    <color name="chip_unselected_bg">#F1F1EF</color>
+    <color name="chip_unselected_text">#37352F</color>
+
+    <!-- Notion tag colors (bg / text / dot) -->
+    <color name="tag_gray_bg">#E3E2E0</color>
+    <color name="tag_gray_text">#55534E</color>
+    <color name="tag_gray_dot">#9B9A97</color>
+    <color name="tag_brown_bg">#EEE0DA</color>
+    <color name="tag_brown_text">#603B2C</color>
+    <color name="tag_brown_dot">#937264</color>
+    <color name="tag_orange_bg">#FADEC9</color>
+    <color name="tag_orange_text">#8A4B15</color>
+    <color name="tag_orange_dot">#D9730D</color>
+    <color name="tag_yellow_bg">#FDECC8</color>
+    <color name="tag_yellow_text">#7F5D07</color>
+    <color name="tag_yellow_dot">#DFAB01</color>
+    <color name="tag_green_bg">#DBEDDB</color>
+    <color name="tag_green_text">#1C3829</color>
+    <color name="tag_green_dot">#0F7B6C</color>
+    <color name="tag_blue_bg">#D3E5EF</color>
+    <color name="tag_blue_text">#183347</color>
+    <color name="tag_blue_dot">#0B6E99</color>
+    <color name="tag_purple_bg">#E8DEEE</color>
+    <color name="tag_purple_text">#412454</color>
+    <color name="tag_purple_dot">#6940A5</color>
+    <color name="tag_pink_bg">#F5E0E9</color>
+    <color name="tag_pink_text">#5C1A35</color>
+    <color name="tag_pink_dot">#AD1A72</color>
+    <color name="tag_red_bg">#FFE2DD</color>
+    <color name="tag_red_text">#5D1715</color>
+    <color name="tag_red_dot">#E03E3E</color>
+</resources>

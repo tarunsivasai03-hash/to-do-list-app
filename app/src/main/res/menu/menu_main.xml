@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main toolbar menu — sort, theme, delete all -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_view_mode"
+        android:icon="@drawable/ic_view_grid"
+        android:title="@string/action_view_mode"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/ic_sort"
+        android:title="@string/action_sort"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_theme"
+        android:icon="@drawable/ic_theme"
+        android:title="@string/action_theme"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_notes"
+        android:title="@string/action_all_notes"
+        android:visible="false"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_archive_view"
+        android:title="@string/action_archive_view"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_trash_view"
+        android:title="@string/action_trash_view"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_empty_trash"
+        android:title="@string/action_empty_trash"
+        android:visible="false"
+        app:showAsAction="never" />
+</menu>
